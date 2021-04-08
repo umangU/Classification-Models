@@ -2,6 +2,8 @@
 library(ISLR)
 library(class)
 attach(Smarket)
+# Reading additional dataset
+dummy = read_xlsx(file.choose())
 # Partitioning the dataset into training and testing
 train = (Year<2005)
 Smarket.2005 = Smarket[!train,]
