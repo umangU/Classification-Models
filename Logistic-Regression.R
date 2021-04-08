@@ -3,6 +3,8 @@ library(ISLR)
 # Dataset dimesnion and variable names 
 names(Smarket)
 dim(Smarket)
+# Reading additional dataset
+dummy = read_xlsx(file.choose())
 # Pairwise correlations among the numerical predictors in the data-set
 cor(Smarket[,-9])
 attach(Smarket)
