@@ -10,9 +10,9 @@ Smarket.2005 = Smarket[!train,]
 dim(Smarket.2005)
 Direction.2005=Direction[!train]
 # Column binding the predictors
-# train.X - matrix containing predictors associated with the training data
-# test.X - matrix containing predictors associated with the testing data
-# train.Direction - vector containing class labels for the training observations
+# train.X - predictors associated with the training data (Matrix)
+# test.X - predictors associated with the testing data (Matrix)
+# train.Direction - class labels for the training observations (Vector)
 train.X = cbind(Lag1,Lag2)[train,]
 test.X = cbind(Lag1,Lag2)[!train,]
 train.Directions = Direction[train]
