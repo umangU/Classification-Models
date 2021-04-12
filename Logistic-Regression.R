@@ -54,5 +54,5 @@ table(glm1.pred, Direction.2005)
 mean(glm1.pred==Direction.2005)
 mean(glm1.pred!=Direction.2005)
 # Approx. 44% test error rate (better than random guessing approach though!)
-# Predictions using new dummy data
+# Predictions using a sample dummy data
 predict(glm1.fit,newdata=data.frame(Lag1=c(1.2,1.5), Lag2=c(1.1,-0.8)), type="response")
