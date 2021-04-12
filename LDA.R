@@ -19,6 +19,6 @@ lda.class = lda.pred$class
 table(lda.class, Direction.2005)
 # Caluclate the mean error
 mean(lda.class==Direction.2005)
-# Applying 50% threshold to the posterior probability to re-create the predictions
+# 50% threshold to the posterior probability applied to re-create the predictions
 sum(lda.pred$posterior[,1]>=0.5)
 sum(lda.pred$posterior[,1]<0.5)
