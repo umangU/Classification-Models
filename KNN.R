@@ -24,4 +24,5 @@ table(knn.pred, Direction.2005)
 # Fitting and making predictions using the KNN model with K=3
 knn.pred = knn(train.X,test.X, train.Directions, k=3)
 table(knn.pred, Direction.2005)
-# 53.6% correct predictions. No further improvement seen past K=3
+# 53.6% correct predictions. 
+# Thus, No further improvement is observed past K=3
