@@ -15,4 +15,5 @@ qda.fit
 # Predicting on the test dataset
 qda.class = predict(qda.fit, Smarket.2005)$class
 table(qda.class, Direction.2005)
+# Number of correct predictions
 mean(qda.class==Direction.2005)
